@@ -1,5 +1,7 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10">
+      <main className="bg-white px-10 md:px-20 lg:px-40">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl">Andrew Ozoria</h1>
@@ -28,6 +30,125 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium">
+              Andrew Ozoria
+            </h2>
+            <h3 className="text-2xl py-2">Full Stack Developer</h3>
+            <p className="text-medium py-5 leading-8 text-gray-800">
+              Hello, Im Andrew! I am a full stack Engineer based in New York
+              City. After studying the hardware side of tech as an Electrical
+              Engineer student, I decided to switch from a breadboard over to a
+              keyboard, and learn how to build things on the web. Im glad I made
+              the switch over to Software Engineering. My previous experience
+              with problem-solving and troubleshooting helped me when it came to
+              learning new things, such as React/Redux and Node/Express. It also
+              taught me how to work together in a group. I am always looking
+              forward to learning new technologies and the potential results
+              they can bring
+            </p>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 ">
+            <a href="https://www.linkedin.com/in/andrewozo/">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/andrewozo">
+              <AiFillGithub />
+            </a>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className=" text-3xl text-center py-1 pt-10"> My Projects</h3>
+          </div>
+          <div>
+            <div className=" text-center  shadow-lg p-10 rounded-xl my-10 ">
+              <Image
+                src={"/../public/Bookworm.png"}
+                width={700}
+                height={700}
+                alt=""
+                priority={true}
+              />
+              <h3 className=" text-lg font-medium pt-8 pb-2">Bookworm</h3>
+              <p className="text-gray-800 py-1">
+                An E-commerce website that sells books
+              </p>
+              <p className="text-gray-800 py-1">
+                • Used Google books api to get information for all books
+              </p>
+              <p className="text-gray-800 py-1">
+                • Utilized JSONWebToken and bcrypt to allow users logins and to
+                allow admin specific features
+              </p>
+              <p className="text-gray-800 py-1">
+                • Working cart that allows users and guests to shop and is also
+                persistent
+              </p>
+            </div>
+
+            <div className=" text-center  shadow-lg p-10 rounded-xl my-10 ">
+              <Image
+                src={"/../public/Sante.png"}
+                width={230}
+                height={230}
+                alt=""
+                priority={true}
+              />
+              <h3 className=" text-lg font-medium pt-8 pb-2">Sante</h3>
+              <p className="text-gray-800 py-1">
+                Santé is a calorie tracking Progressive Web App(PWA). Where the
+                user is able to track their calories,macros, and water for the
+                day. Also having access to the variety of recipes they can add
+                to their tracker
+              </p>
+              <p className="text-gray-800 py-1">
+                • PWA which allows the user to install the app from the web on
+                to their device of choice
+              </p>
+              <p className="text-gray-800 py-1">
+                • New tracker gets created every time a user logs in
+              </p>
+              <p className="text-gray-800 py-1">
+                • Home screen shows users how many calories they have left for
+                the day
+              </p>
+            </div>
+
+            <div className=" text-center  shadow-lg p-10 rounded-xl my-10 ">
+              <Image
+                src={"/../public/WMB.png"}
+                width={230}
+                height={230}
+                alt=""
+                priority={true}
+              />
+              <h3 className=" text-lg font-medium pt-8 pb-2">WheresMyBodega</h3>
+              <p className="text-gray-800 py-1">
+                Mobile app that takes the users current location and displays
+                the closest bodegas/delis to them within a mile
+              </p>
+              <p className="text-gray-800 py-1">
+                • Made with React Native Expo, Firebase authentication
+                ,Firestore database
+              </p>
+              <p className="text-gray-800 py-1">
+                • Used Yelp API to locate bodegas/delis using the users location
+              </p>
+              <p className="text-gray-800 py-1">
+                • Google map being used through Google Maps API
+              </p>
+              <p className="text-gray-800 py-1">
+                • Published through Expo Go App
+              </p>
+              <a
+                className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2  rounded-md ml-8 "
+                href="https://github.com/andrewozo/WheresMyBodega"
+              >
+                Go to project
+              </a>
+            </div>
+          </div>
         </section>
       </main>
     </div>

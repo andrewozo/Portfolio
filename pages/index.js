@@ -89,7 +89,7 @@ export default function Home() {
 
           <div>
             <div className=" text-center  shadow-2xl p-10 rounded-xl my-10 dark: shadow-blue-900">
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center ">
                 <Image
                   src={Bookworm}
                   width={700}

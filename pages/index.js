@@ -191,8 +191,9 @@ export default function Home() {
               <h3 className=" text-lg font-medium pt-8 pb-2 dark:text-yellow-50">
                 WheresMyBodega
               </h3>
-              <p className="text-gray-800 py-1 text-center dark: text-yellow-50">
-                {`Mobile app that takes the users current location and displays  the closest bodegas/delis to them within a mile`}
+              <p className="text-gray-800 py-1 text-center dark:text-yellow-50">
+                Mobile app that takes the users current location and displays
+                the closest bodegas/delis to them within a mile
               </p>
 
               <p className="text-gray-800 py-1 dark:text-yellow-50 ">
